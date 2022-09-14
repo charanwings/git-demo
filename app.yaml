@@ -20,3 +20,11 @@ spec:
             cpu: "500m"
         ports:
         - containerPort: <Port>
+---
+kind: apiVersion: v1
+kind: Secret
+metadata:
+  name: mysecret
+type: Opaque
+data:
+  password: <Password>
